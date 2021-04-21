@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+ <script type="text/javascript">
+ 	function Tinhtong(){
+		var a=document.getElementById('soa');
+		var b=document.getElementById('sob');
+		//tinh tong
+		var tong=Number(a.value)+Number(b.value);
+		//xuat cho bien
+		var kq=document.getElementById('ketqua');
+		kq.value=tong;
+ 	}
+ 	function Tinhhieu() {
+ 	    var a=document.getElementById('soa');
+ 	    var b=document.getElementById('sob');
+ 	    var hieu=Number(a.value)-Number(b.value);
+ 	    var kq=document.getElementById('ketqua');
+ 	    kq.value=hieu;
+ 	}
+ 	function Tinhtich(){
+ 		var a=document.getElementById('soa');
+ 	    var b=document.getElementById('sob');
+ 	    var tich=Number(a.value)*Number(b.value);
+ 	    var kq=document.getElementById('ketqua');
+ 	    kq.value=tich;
+ 	}
+ 	function Tinhthuong(){
+ 		var a=document.getElementById('soa');
+ 	    var b=document.getElementById('sob');
+ 	    var thuong=Number(a.value)/Number(b.value);
+ 	    var kq=document.getElementById('ketqua');
+ 	    kq.value=thuong;
+
+ 	}
+ 	function Tinhdu(){
+ 		var a=document.getElementById('soa');
+ 	    var b=document.getElementById('sob');
+ 	    var du=Number(a.value)%Number(b.value);
+ 	    var kq=document.getElementById('ketqua');
+ 	    kq.value=du;
+
+ 	}
+ </script>
+<body>
+	<form>
+<h1>Nhập phép tính:</h1>
+<p>
+<label>nhập số a:</label>
+<input type="text" id="soa">
+</p>
+<p>
+	<label>nhập số b:</label>
+<input type="text" id="sob">
+</p>
+<p>
+	<label>kết quả</label>
+	<input type="text" id="ketqua" >
+	
+</p>
+	<td colspan="2"><input type="Button" value="Tinhtong" onclick="Tinhtong();"></td>
+
+<td colspan="2"><input type="Button" value="Tinhhieu" onclick="Tinhhieu()"></td>
+<td colspan="2"><input type="Button" value="Tinhtich" onclick="Tinhtich()"></td>
+<td colspan="2"><input type="Button" value="Tinhthuong" onclick="Tinhthuong()"></td>
+<td colspan="2"><input type="Button" value="Tinhdu" onclick="Tinhdu()"></td>
+
+</form>
+</body>
+</html>
